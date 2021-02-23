@@ -1,0 +1,17 @@
+<li class="list-group-item mt-2">
+	{{burger_name}}
+
+	{{#if devoured}}
+	<div class="float-right">
+		<form class="form-inline" method="POST" action="/eat-the-burger">
+			<input type="hidden" name="id" value="{{id}}" />
+			<button class=" btn btn-success" type="submit">
+				DEVOUR!
+			</button>
+		</form>
+	</div>
+
+
+	{{/if}}
+
+</li>
